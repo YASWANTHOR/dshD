@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+      <div><app-sidebar></app-sidebar></div>
+      <div class="container">
+      <div><app-topbar></app-topbar></div>
+      
+      <div class="container"></div>
+      <div><app-title></app-title></div>
+      
+      <div class="row">
+       
+       <div class="col-lg-3" *ngFor="let element of data">
+           <app-navmenu [priceObj]="element"></app-navmenu>
+       </div>
+      
+       
+      
+    </div>    
+
+    </div> 
+    </div>
+</body>
+
+
